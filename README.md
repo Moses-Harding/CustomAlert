@@ -77,6 +77,6 @@ let validationMessage: ((String) -> (String?)) = { (text: String) in
 
 let alert = TextInputAlert(parentViewController: self, title: title, message: message, messageFontSize: 16, validationFontSize: 12, validationAction: validationAction, validationMessage: validationMessage)
 ```
-Having a mis-matched validation message and action won't cause any errors, but it might confuse the user. 
+Having a mismatched validation message and action won't cause any errors, but it might confuse the user. 
 
-Finally, keep in mind that the alert will automatically size itself to accomodate the validation, but there is simple a limit to how much text a single view can accomodate, so double-check to make sure everything fits.
+Finally, keep in mind that the alert will automatically size itself to accomodate the validation, but there is simply a limit to how much text a single view can accomodate, so double-check to make sure everything fits.
