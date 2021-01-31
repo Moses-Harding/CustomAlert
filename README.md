@@ -1,6 +1,9 @@
 # CustomAlert
 
-Apple's **UIAlertController** is, in my opinion, clunky, and by their insistence, uncustomizable. Additionally, validation is extremely complicated, and it's difficult to get custom messages to appear. I created CustomAlert to allow you to 1. rapidly create simple alerts, 2. customize the visual aspects of the alerts, and 3. add validation.
+According to Apple:
+>The UIAlertController class is intended to be used as-is and does not support subclassing. 
+
+This leaves limited room for customization. Additionally, validation is can be complicated, and it's difficult to get custom messages to appear. I created CustomAlert to allow you to 1. rapidly create simple alerts, 2. customize the visual aspects of the alerts, and 3. add validation.
 
 ## Alert Types
 
