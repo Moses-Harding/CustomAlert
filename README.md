@@ -40,7 +40,7 @@ You can use the set functions to modify items after the fact, including the abil
 ```
 alert.setCustomOkayText(to: "Cancel", fontColor: .red)
 alert.okayAction = { print("Cancel") }
- alert.setFont(for: alert.messageLabel, fontSize: 100, fontName: "Helvetica")
+alert.setFont(for: alert.messageLabel, fontSize: 100, fontName: "Helvetica")
 ```
 
 ### TextInputAlert
