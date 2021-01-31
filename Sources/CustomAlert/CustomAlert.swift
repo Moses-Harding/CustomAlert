@@ -162,6 +162,26 @@ public class CustomAlert: UIView {
         
         //Background color
         self.backgroundColor = obscuredBackgroundColor
+        
+        addBackground()
+    }
+    
+    func addBackground() {
+
+        var colorList = [UIColor.blue.cgColor, UIColor.cyan.cgColor]
+        
+        let gradient = CAGradientLayer()
+        
+        gradient.frame = alertBody.bounds
+        gradient.colors = colorList
+
+        
+        gradient.startPoint = CGPoint(x: 0.5, y: 0)
+        gradient.endPoint = CGPoint(x: 0.5, y: 1)
+        
+        gradient.zPosition = -1
+        
+        self.alertBody.layer.addSublayer(gradient)
     }
     
     required init?(coder: NSCoder) {
