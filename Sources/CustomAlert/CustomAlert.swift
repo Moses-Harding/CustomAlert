@@ -267,7 +267,7 @@ public class CustomAlert: UIView {
         heightConstraint?.isActive = true
     }
     
-    public func setFont(for label: UILabel, fontSize: CGFloat, fontName: String = "HiraginoSans-W3") {
+    public func setFont(for label: UILabel, fontSize: CGFloat, fontName: String = "EuphemiaUCAS") {
         
         guard let customFont = UIFont(name: fontName, size: fontSize) else { fatalError("Font not loaded")}
         label.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: customFont)
